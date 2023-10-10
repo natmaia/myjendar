@@ -20,11 +20,11 @@ Para executar o aplicativo, você precisará ter o Java instalado em sua máquin
 
 <div>
   <a href="https://github.com/natmaia" >
-    <img align="center" alt="Nathalia Maia" height="150" width="150" src="https://github.com/natmaia/arquivosFotosReadme/blob/main/3.png" />
+    <img align="center" alt="Nathalia Maia" height="150" width="150" src="https://github.com/natmaia/arquivosFotosReadme/blob/main/3-metallica.png" />
   </a>
   
   <a href="https://github.com/JaelsonJonas">
-    <img align="center" alt="Jaelson Jonas" height="150" width="150" src="https://github.com/natmaia/arquivosFotosReadme/blob/main/2.png" />
+    <img align="center" alt="Jaelson Jonas" height="150" width="150" src="https://github.com/natmaia/arquivosFotosReadme/blob/main/2-metallica.png" />
   </a>  
 </div>
 <br>
