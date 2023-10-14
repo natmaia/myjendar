@@ -1,0 +1,22 @@
+.body {
+  background: linear-gradient(90deg, #000046 0%, #2a7388 80%);
+  color: white;
+}
+
+.corpo {
+  margin: 20px;
+  color: white;
+}
+
+.btn-custom {
+  border-color: #ad1587;
+  color: white;
+  background-color: #ab50ab; 
+}
+
+.btn-custom:hover {
+  border-color: #5c1bbc;
+  background: linear-gradient(90deg, #000046 0%, #2a7388 100%);
+}
+
+
