@@ -6,16 +6,20 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class TaskService{
+public class TaskService {
 
     @Autowired
     TaskRepository taskRepository;
 
-    public List<Task> findAll(){
+    public List<Task> findAll() {
         return taskRepository.findAll();
     }
 
-    public void delete(Long id){
+    public void delete(Long id) {
         taskRepository.deleteById(id);
+    }
+
+    public void save(Task t) {
+        taskRepository.save(t);
     }
 }

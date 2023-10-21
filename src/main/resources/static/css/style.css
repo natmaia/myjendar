@@ -5,18 +5,48 @@
 
 .corpo {
   margin: 20px;
-  color: white;
+  color: white !important;
+  
 }
 
 .btn-custom {
-  border-color: #ad1587;
-  color: white;
-  background-color: #ab50ab; 
+  border-color: #2a7388;
+  color: white !important;
+  background-color: #2a7388; 
 }
 
 .btn-custom:hover {
-  border-color: #5c1bbc;
-  background: linear-gradient(90deg, #000046 0%, #2a7388 100%);
+  background: linear-gradient(90deg, #000046 0%, #2a7388 100%) !important;
 }
+
+.form-control {
+  display: block !important;
+  width: 90% !important;
+  padding: .10rem .50rem !important;
+  font-size: 1rem !important;
+  line-height: 1.5 !important;
+  color: #495057 !important;
+  background-color: #fff !important;
+  background-clip: padding-box !important;
+  border: 1px solid #ced4da !important;
+  border-radius: .25rem !important;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out !important;
+  margin-top: 10px !important;
+}
+
+.btn-primary {
+  color: #fff !important;
+  margin-top:15px;
+  border: #2a7388 !important;
+  background-color: #2a7388 !important;
+  }
+
+.btn-primary:hover {
+  color: #fff !important;
+  margin-top:15px;
+  background: linear-gradient(90deg, #000046 0%, #2a7388 100%) !important;
+}
+
+
 
 
