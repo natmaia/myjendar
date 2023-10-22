@@ -70,10 +70,10 @@
   <main class="corpo d-flex flex-column align-items-center">
 
     <h2 class="text-center">Cadastrar Task</h2>
-    <form class="col-10 col-md-5 p-4 rounded" action="/task" method="post" th:object="${task}">
+    <form class="col-10 col-md-5 p-4 rounded" th:action="${'/task'}" method="post" th:object="${task}">
       <div class="mb-3 p-1">
         <label for="inputTitulo">Titulo</label>
-        <!-- Exemplo do professo, não cabe no nosso projeto (th:classappend="${#fields.hasErrors('title')} ? form-control") -->
+        <!-- Exemplo do professor, não cabe no nosso projeto (th:classappend="${#fields.hasErrors('title')} ? form-control") -->
         <input th:field="*{title}" type="text" class="form-control" placeholder="Titulo" />
         <span class="helper-text red-text" th:errors="*{title}"></span>
       </div>
