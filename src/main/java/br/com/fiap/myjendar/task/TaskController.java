@@ -2,7 +2,6 @@ package br.com.fiap.myjendar.task;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
-import org.springframework.security.oauth2.core.user.DefaultOAuth2User;
 import org.springframework.security.oauth2.core.user.OAuth2User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -42,7 +41,11 @@ public class TaskController {
             avatar = "https://github.com/natmaia/arquivosFotosReadme/blob/main/FOTOS-PERFIL-ARREDONDADO.png";
         }
 
+        
+        
+        
         model.addAttribute("avatar", avatar);
+        model.addAttribute("username", user.getAttribute("name"));
         System.out.println(user);
         model.addAttribute("tasks", service.findAll());
         return "task/index";
