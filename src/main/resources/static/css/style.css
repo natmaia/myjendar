@@ -1,22 +1,26 @@
 .body {
-  background: linear-gradient(90deg, #000046 0%, #2a7388 80%);
-  color: white;
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(106,103,21,1) 60%, rgba(192,189,9,1) 85%, rgba(255,252,0,1) 100%);
+  color: #c0bd09;
 }
+
+/* background: linear-gradient(90deg, #000046 0%, #c0bd09 80%); */
 
 .corpo {
   margin: 20px;
-  color: white !important;
+  color: rgb(255, 255, 255) !important;
   
 }
 
 .btn-custom {
-  border-color: #2a7388;
-  color: white !important;
-  background-color: #2a7388; 
+  /* border-color: #c0bd09; */
+  color: black !important;
+  background-color: #c0bd09;
+  font-weight: bold
 }
 
 .btn-custom:hover {
-  background: linear-gradient(90deg, #000046 0%, #2a7388 100%) !important;
+  color: #fff !important;
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(106,103,21,1) 60%, rgba(192,189,9,1) 85%, rgba(255,252,0,1) 100%) !important;
 }
 
 .form-control {
@@ -35,16 +39,16 @@
 }
 
 .btn-primary {
-  color: #fff !important;
+  color: black !important;
   margin-top:15px;
-  border: #2a7388 !important;
-  background-color: #2a7388 !important;
+  border: #ae09c0 !important;
+  background-color: #c0bd09 !important;
   }
 
 .btn-primary:hover {
   color: #fff !important;
   margin-top:15px;
-  background: linear-gradient(90deg, #000046 0%, #2a7388 100%) !important;
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(106,103,21,1) 60%, rgba(192,189,9,1) 85%, rgba(255,252,0,1) 100%) !important;
 }
 
 .avatar{

@@ -23,7 +23,7 @@
 </head>
 
 <body class="body">
-  <nav class="navbar navbar-expand-lg" style="background-color: rgba(80, 151, 171, 0.5)">
+  <nav class="navbar navbar-expand-lg" style="background-color: rgb(0, 0, 0)">
     <div class="container-fluid">
       <a class="navbar-brand" style="color: #ffffff; font-size: 20px" href="#">MyJendar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -39,22 +39,36 @@
             <a class="nav-link" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" style="color: #ffffff" href="#">Tasks</a>
+            <a class="nav-link active" style="color: #ffffff" href="#"> Tarefas</a>
           </li>
         </ul>
 
-        <!-- Dropdown Trigger -->
+        <form class="d-flex" role="search">
+          <input class="form-control me-3" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-primary btn-custom me-5" style="
+                border-color: #000000;
+                color: white;
+                background-color: #c0bd09;
+                margin-top:15px;
+              " type="submit">
+            Search
+          </button>
+        </form>
+
         <a class='dropdown-trigger' href='#dropdown1' data-target='dropdown1'>
           <img class="avatar" th:src="${avatar}" alt="Avatar">
         </a>
-
-        <!-- Dropdown Structure -->
-        <ul id='dropdown1' class='dropdown-content' >
-          <li style="color: #ffffff"><span th:text="${username}" alt="name"></span></li>
-          <li class="divider"  tabindex="-1"></li>
-          <li><a href="#!" class="m-2"><i class="material-icons">view_module</i>Calendario</a></li>
+        <ul id='dropdown1' class='dropdown-content' style="
+        border-color: #000000;
+        color: white;
+        background-color: #c0bd09;
+        margin-top:15px;
+      ">
+          <li style="background: #c0bd09;"><span th:text="${username}" alt="name"></span></li>
           <li class="divider" tabindex="-1"></li>
-          <li><a href="/logout" class="m-2 btn-custom:hover" ><i class="material-icons">logout</i>Sair</a></li>
+          <li><a href="#!" class="m-2" style="color: rgb(0, 0, 0); border-color: #050f99;"><i class="material-icons">view_module</i>Calendario</a></li>
+          <li class="divider" tabindex="-1"></li>
+          <li ><a href="/logout" class="m-2 btn-custom:hover"><i class="material-icons">logout</i>Sair</a></li>
         </ul>
 
         <script>
@@ -69,17 +83,6 @@
         </script>
 
 
-        <form class="d-flex" role="search">
-          <input class="form-control me-3" type="search" placeholder="Search" aria-label="Search" />
-          <button class="btn btn-outline-primary btn-custom me-5" style="
-                border-color: #2a7388;
-                color: white;
-                background-color: #2a7388;
-                margin-top:15px;
-              " type="submit">
-            Search
-          </button>
-        </form>
       </div>
 
 
@@ -138,9 +141,9 @@
         </div>
 
         <button type="button" class="btn btn-outline-primary btn-custom" style="
-              border-color: #2a7388;
+              border-color: #b6b6b6;
               color: white;
-              background-color: #2a7388;
+              background-color: #c0bd09;
               margin-top: 10px;
             " id="liveToastBtn">
           Cadastrado
@@ -167,9 +170,9 @@
 
   <div class="fixed-action-btn">
     <a href="/task/new" class="btn-floating btn-large btn-custom" style="
-      border-color: #2a7388;
+      border-color: #c0bd09;
       color: white;
-      background-color: #2a7388;
+      background-color: #c0bd09;
       margin-top: 10px;
     ">
       <i class="large material-icons">add</i>
